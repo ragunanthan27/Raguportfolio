@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ragunathan S — AI &amp; Data Science</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- loading screen -->
+<div id="loader">
+  <div class="loader-mark">RS</div>
+</div>
+
+<!-- sticky navigation -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">Ragu<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <canvas id="particles"></canvas>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <div class="hero-grid">
+    <div class="hero-content reveal hero-text">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Ragunathan S</h1>
+      <h2 class="hero-role">Artificial Intelligence <span class="gradient-text">&amp; Data Science</span> Student</h2>
+      <p class="hero-intro">I am an aspiring AI and Data Science professional passionate about building intelligent solutions, analyzing data, and developing impactful technology.</p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#" class="btn btn-outline" id="resumeBtn">Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/ragunanthan27" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.15v3.19c0 .3.21.66.79.55A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ragu-s-431a16358" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="mailto:ragunathan.s@example.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm18.4 2H3.6l8.4 6.3L20.4 6ZM3 8.1V18h18V8.1l-9 6.75L3 8.1Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-photo reveal" id="heroPhoto">
+      <div class="hero-photo-ring"></div>
+      <div class="hero-photo-frame">
+        <img src="assets/profile.jpeg" alt="Ragunathan S" id="heroPhotoImg">
+      </div>
+      <div class="hero-photo-chip chip-1"><span class="dot"></span>Available for internships</div>
+      <div class="hero-photo-chip chip-2">AI &amp; DS</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <p class="section-tag reveal">About</p>
+  <h2 class="section-title reveal">A little about me</h2>
+
+  <div class="about-grid">
+    <p class="about-text reveal">
+      I am an Artificial Intelligence and Data Science student with an interest in Software Development,
+      Data Analytics, Artificial Intelligence, and Web Development. I enjoy solving real-world problems
+      using programming, data analysis, and intelligent technologies — turning messy, ambiguous problems
+      into systems that actually work.
+    </p>
+
+    <div class="stat-cards">
+      <div class="stat-card reveal">
+        <div class="stat-icon">🧠</div>
+        <p class="stat-title">AI &amp; DS Student</p>
+        <p class="stat-sub">Anna University</p>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon">☕</div>
+        <p class="stat-title">Java &amp; Python</p>
+        <p class="stat-sub">Core languages</p>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon">📊</div>
+        <p class="stat-title">Data Analytics</p>
+        <p class="stat-sub">EDA · Power BI · Excel</p>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon">🌐</div>
+        <p class="stat-title">Web Development</p>
+        <p class="stat-sub">Frontend &amp; backend</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section-alt">
+  <p class="section-tag reveal">Skills</p>
+  <h2 class="section-title reveal">What I work with</h2>
+
+  <div class="skills-grid">
+    <div class="skill-block reveal">
+      <h3>Programming Languages</h3>
+      <div class="skill-bar" data-level="80">
+        <div class="skill-bar-head"><span>Java</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-level="85">
+        <div class="skill-bar-head"><span>Python</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-block reveal">
+      <h3>Data &amp; Analytics</h3>
+      <div class="skill-bar" data-level="75">
+        <div class="skill-bar-head"><span>Power BI</span><span class="skill-pct">75%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-level="80">
+        <div class="skill-bar-head"><span>Excel</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-level="78">
+        <div class="skill-bar-head"><span>Exploratory Data Analysis</span><span class="skill-pct">78%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-level="70">
+        <div class="skill-bar-head"><span>Machine Learning</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-block reveal">
+      <h3>Database</h3>
+      <div class="skill-bar" data-level="75">
+        <div class="skill-bar-head"><span>MySQL</span><span class="skill-pct">75%</span></div>
+        <div class="skill-track"><div class="skill-fill"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-block reveal">
+      <h3>Areas of Interest</h3>
+      <div class="tag-cloud">
+        <span class="tag">Data Science &amp; Analytics</span>
+        <span class="tag">Data Visualization</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Web Development</span>
+        <span class="tag">Frontend Development</span>
+        <span class="tag">Backend Development</span>
+        <span class="tag">Web Frameworks</span>
+        <span class="tag">Manufacturing Design</span>
+        <span class="tag">AutoCAD</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+  <p class="section-tag reveal">Projects</p>
+  <h2 class="section-title reveal">Things I've built</h2>
+
+  <div class="project-grid">
+    <div class="project-card reveal" data-tilt>
+      <div class="project-card-inner">
+        <p class="project-tag">IoT · AI · Blockchain</p>
+        <h3>Blockchain Enabled Pest Prediction System for Smart Farming</h3>
+        <p class="project-desc">A smart farming system integrating IoT sensors, AI-driven pest prediction
+        models, and blockchain technology to continuously monitor environmental and crop conditions —
+        enabling early detection and prediction of pest presence.</p>
+        <div class="project-tech">
+          <span>IoT</span><span>Artificial Intelligence</span><span>Machine Learning</span><span>Blockchain</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="btn btn-sm btn-primary">View Project</a>
+          <a href="https://github.com/ragunanthan27" target="_blank" rel="noopener" class="btn btn-sm btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-tilt>
+      <div class="project-card-inner">
+        <p class="project-tag">AI · Web · Search</p>
+        <h3>Campus Finder</h3>
+        <p class="project-desc">An AI-powered website designed to simplify tracking lost property across a
+        university campus. Students can report missing items, browse a live registry of found goods, and
+        use intelligent search to reconnect with their belongings.</p>
+        <div class="project-tech">
+          <span>Artificial Intelligence</span><span>Web Development</span><span>Intelligent Search</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="btn btn-sm btn-primary">View Project</a>
+          <a href="https://github.com/ragunanthan27" target="_blank" rel="noopener" class="btn btn-sm btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section section-alt">
+  <p class="section-tag reveal">Education</p>
+  <h2 class="section-title reveal">Academic timeline</h2>
+
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <p class="timeline-date">2024 – 2027</p>
+        <h3>Bachelor of Technology</h3>
+        <p class="timeline-sub">Artificial Intelligence and Data Science</p>
+        <p class="timeline-meta">Dr. Mahalingam College of Engineering and Technology, Pollachi · Anna University</p>
+        <p class="timeline-grade">CGPA: 7.19</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <p class="timeline-date">2021 – 2024</p>
+        <h3>Diploma</h3>
+        <p class="timeline-sub">Arulmigu Palaniandavar Polytechnic College, Palani</p>
+        <p class="timeline-grade">Percentage: 74.45%</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section">
+  <p class="section-tag reveal">Experience</p>
+  <h2 class="section-title reveal">Internship</h2>
+
+  <div class="exp-card reveal">
+    <div class="exp-head">
+      <div>
+        <h3>Neha Solutions</h3>
+        <p class="exp-role">Python with Data Science Intern</p>
+      </div>
+      <div class="exp-meta">
+        <span>Pollachi</span>
+        <span>June 2025 – July 2025</span>
+      </div>
+    </div>
+    <ul class="exp-list">
+      <li>Gained hands-on experience in Python for Data Science</li>
+      <li>Performed Exploratory Data Analysis</li>
+      <li>Worked with real-world datasets</li>
+      <li>Learned data cleaning techniques</li>
+      <li>Gained exposure to machine learning workflows</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications" class="section section-alt">
+  <p class="section-tag reveal">Certifications</p>
+  <h2 class="section-title reveal">Certifications</h2>
+
+  <div class="cert-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon">🎓</div>
+      <h3>Generative AI Model</h3>
+      <p class="cert-sub">Certification of Participation</p>
+      <p class="cert-date">September 2024</p>
+    </div>
+  </div>
+
+  <p class="section-tag reveal" style="margin-top:64px;">Achievements</p>
+  <div class="cert-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon">🏆</div>
+      <h3>College Hackathon</h3>
+      <p class="cert-sub">Collaborated with a team to develop a problem-solving prototype within a limited timeframe.</p>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon">🏐</div>
+      <h3>Zone Volleyball Tournament</h3>
+      <p class="cert-sub">Participated, 2023 – 2024.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <p class="section-tag reveal">Contact</p>
+  <h2 class="section-title reveal">Let's talk</h2>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p class="contact-lede">Open to internship opportunities in AI, Data Science, and Software Development.
+      Feel free to reach out — I usually reply within a day or two.</p>
+      <ul>
+        <li><span class="contact-label">Email</span><a href="mailto:ragunathan.s@example.com">ragunathan.s@example.com</a></li>
+        <li><span class="contact-label">Phone</span><a href="tel:+916379908086">+91 63799 08086</a></li>
+        <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/ragu-s-431a16358" target="_blank" rel="noopener">linkedin.com/in/ragu-s</a></li>
+        <li><span class="contact-label">GitHub</span><a href="https://github.com/ragunanthan27" target="_blank" rel="noopener">github.com/ragunanthan27</a></li>
+      </ul>
+    </div>
+
+    <form id="contactForm" class="contact-form reveal">
+      <!-- Replace YOUR_ACCESS_KEY_HERE with the key emailed to you by web3forms.com -->
+      <input type="hidden" name="access_key" value="4bfc7ae2-2809-4151-a7cf-52c8be47baf8">
+      <input type="hidden" name="subject" value="New message from portfolio site">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-row">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+      <p id="formSuccess" class="form-success">Message sent — thanks for reaching out. I'll get back to you soon.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <p>© 2026 Ragunathan S. All rights reserved.</p>
+  <div class="footer-socials">
+    <a href="https://github.com/ragunanthan27" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.15v3.19c0 .3.21.66.79.55A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/ragu-s-431a16358" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+    </a>
+    <a href="mailto:ragunathan.s@example.com" aria-label="Email">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm18.4 2H3.6l8.4 6.3L20.4 6ZM3 8.1V18h18V8.1l-9 6.75L3 8.1Z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
